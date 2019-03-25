@@ -8,6 +8,10 @@ puppeteer.launch({
         await page.goto('https://d.ishadowx.com/', {
             waitUntil: 'networkidle0'
         });
+        const html = await page.$eval('body', (ele) => {
+            return ele.innerHTML;
+        });
+        console.log(html);
         await page.click('#header .page-scroll');
         await page.waitForSelector('.v2', {
             visible: true
