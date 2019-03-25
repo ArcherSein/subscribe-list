@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 puppeteer.launch({
-    headless: true
+    headless: false
 }).then(async (browser) => {
     const page = await browser.newPage();
     await page.goto('https://d.ishadowx.com/', {
