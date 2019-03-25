@@ -1,0 +1,22 @@
+{
+  "name": "subscribe-list",
+  "version": "1.0.0",
+  "description": "puppeteer to update list",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcherSein/subscribe-list.git"
+  },
+  "author": "ArcherSein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArcherSein/subscribe-list/issues"
+  },
+  "homepage": "https://github.com/ArcherSein/subscribe-list#readme",
+  "dependencies": {
+    "puppeteer": "^1.13.0"
+  }
+}
