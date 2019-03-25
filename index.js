@@ -8,7 +8,10 @@ puppeteer.launch({
         await page.goto('https://d.ishadowx.com/', {
             waitUntil: 'networkidle0'
         });
-
+        await page.click('#header .page-scroll');
+        await page.waitForSelector('.v2', {
+            visible: true
+        });
         const url = await page.$eval('.portfolio-items', (ele) => {
             const btns = ele.querySelectorAll('.v2 .copybtn');
             const urlsv2 = Array.from(btns).map((btn) => {
